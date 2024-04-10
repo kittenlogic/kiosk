@@ -1,21 +1,5 @@
 User-agent: *
 
-Disallow: /?ref=*
 
-Disallow: /thank-you.html
-Disallow: /thank-you-partner.html
-Disallow: /privacy.html
-Disallow: /cookie-policy.html
-Disallow: /shipping-policy.html
-Disallow: /terms-and-conditions.html
-Disallow: /warranty.html
 
-Noindex: /thank-you.html
-Noindex: /thank-you-partner.html
-Noindex: /privacy.html
-Noindex: /cookie-policy.html
-Noindex: /shipping-policy.html
-Noindex: /terms-and-conditions.html
-Noindex: /warranty.html
 
-Sitemap: https://aeonlaser.us/sitemap.xml
