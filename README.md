@@ -2,49 +2,17 @@
 
 ## How to setup a local server
 
-1. The 'public' folder contains the website for the kiosk. Move this folder into a directory on the kiosk computer that is *not* the Desktop.
-2. Open the Terminal or Command Prompt in Windows.
-3. Navigate to the directory that contains the 'public' folder, using the 'cd' command, followed by the full path to that folder, for example: `cd /Users/emily/code/kiosk/public`
+1. Copy the Kiosk folder into `C:\Program Files (x86)`
+2. Open the "alt index pages" folder and copy the corresponding index page into the "public" folder.
+3. Rename the alt index file to "index.html".
+4. Go back to the Kiosk folder and install python-3.12.3-amd64.exe
+5. Type "Command Prompt" into the Windows search bar.
+6. Type `cd\program files (x86)\kiosk\public`
+7. Type `python3 -m http.server`
+8. Click Allow Access if a security popup appears.
+9. Lauch Microsoft Edge and type `localhost:8000` into the browser
+10. Once the page loads, click on the "..." at the top right of the browser and click on the Fullscreen icon. Note: F11 is the only way to exit full screen mode, so you will need to plug in a keyboard if you want to exit.
+11. If the video on the menu screen doesn't automatically play, click on one of the menu options and then on the Aeon logo at the top left of the screen to go back to the menu. It should play on repeat.
+12. If you end up replacing the index file after the site has already loaded once, you will need to clear the cache.
+13. If so, type `edge://settings/clearbrowserdata` in the browser and clear the cache, then refresh the page.
 
-4. To figure out the correct path to your folder, watch this video: [How to Open a File Path in Terminal - Windows](https://www.youtube.com/watch?v=my4kER-fyaY).
-
-5. Next, check which version of Python is installed, enter the following command:
-
-```
-python -V
-```
-
-If the above fails, try:
-
-```
-python3 -V
-```
-6.  Enter the command to start up the server in that directory:
-
-If Python version returned above is 3.X
-
-```
-python3 -m http.server
-```
-
-OR
-
-```
-py -3 -m http.server
-```
-
-If Python version returned above is 2.X
-
-```
-python -m SimpleHTTPServer
-```
-6. By default, this will run the contents of the directory on a local web server, on port 8000. You can go to this server by going to the URL `localhost:8000` in your web browser.
-7. Congrats! Your website it running.
-
-## Alternative index.html pages
-
-1. You will find another folder titled `alt index pages`, which contains alternative versions of the index.html file. 
-2. Each version only differs in the heading, which has the model number of the machine. They are titled, `index-mira5.html`, `index-mira7.html`, `index-mira9.html`, etc for easy identification.
-3. As you install the website in the 6 different kiosks, make sure to replace the original `index.html` page with one of these. 
-4. **IMPORTANT** make sure to rename the `index-mira5.html` (or whatever) to `index.html` when you add it to the root of the website folder for that particular kiosk. 
-5. Repeat for each kiosk.
