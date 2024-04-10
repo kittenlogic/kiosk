@@ -14474,6 +14474,40 @@ figcaption {
       grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (160px)[3] !important;
+      grid-template-rows: repeat(3, 160px) !important;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.grid-container div {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  background-color: #000;
+  padding: 60px 0 !important;
+}
+
+.grid-container a {
+  color: #fff;
+}
+
+.grid-container div:focus,
+.grid-container div:hover {
+  background-color: #9C0404;
+}
+
 @media (max-width: 767px) {
   .flex.xs-reset {
     display: block;
