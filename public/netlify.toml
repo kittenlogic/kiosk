@@ -1,0 +1,14 @@
+redirects = [
+  {from = "/help-center", to = "/training"},
+  {from = "/docs", to = "https://shop.aeonlaser.us/a/docs/", force = true},
+  {from = "/guides", to = "https://shop.aeonlaser.us/a/docs/", force = true},
+  {from = "https://shop.aeonlaser.us/makecnc-terms", to = "https://shop.aeonlaser.us/pages/makecnc-terms", force = true},
+  {from = "https://help.aeonlaser.us/", to = "https://shop.aeonlaser.us/a/docs/", force = true},
+  {from = "https://aeonlaser.us/guides/lightburn-setup", to = "https://shop.aeonlaser.us/a/docs/category/lightburn", force = true},
+  {from = "https://aeonlaser.us/guides/lightburn-camera-setup", to = "https://shop.aeonlaser.us/a/docs/accessories/lightburn-camera-setup", force = true},
+  {from = "https://aeonlaser.us/guides/multi-roller", to = "https://shop.aeonlaser.us/a/docs/category/multi-roller", force = true},
+  {from = "https://aeonlaser.us/guides/4-inch-lens-kit", to = "https://shop.aeonlaser.us/a/docs/accessories/4-inch-lens-kit-mira", force = true},
+  {from = "https://aeonlaser.us/guides/removing-chiller", to = "https://shop.aeonlaser.us/a/docs/category/maintenance", force = true},
+  {from = "https://aeonlaser.us/guides/smart-rotary", to = "https://shop.aeonlaser.us/a/docs/accessories/smart-rotary", force = true},
+  {from = "https://aeonlaser.us/guides/getting-started", to = "https://shop.aeonlaser.us/a/docs/category/getting-started", force = true}
+  ]
