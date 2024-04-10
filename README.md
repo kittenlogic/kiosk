@@ -4,7 +4,7 @@
 
 1. The 'public' folder contains the website for the kiosk. Move this folder into a directory on the kiosk computer that is *not* the Desktop.
 2. Open the Terminal or Command Prompt in Windows.
-3. Navigate to the directory that contains the 'public' folder, using the 'cd' command, followed by the full path to that folder, for example: `cd /Users/emily/code/kiosk/public`.
+3. Navigate to the directory that contains the 'public' folder, using the 'cd' command, followed by the full path to that folder, for example: `cd /Users/emily/code/kiosk/public`
 
 4. To figure out the correct path to your folder, watch this video: [How to Open a File Path in Terminal - Windows](https://www.youtube.com/watch?v=my4kER-fyaY).
 
@@ -14,14 +14,14 @@
 python -V
 ```
 
-# If the above fails, try:
+If the above fails, try:
 
 ```
 python3 -V
 ```
 6.  Enter the command to start up the server in that directory:
 
-# If Python version returned above is 3.X
+If Python version returned above is 3.X
 
 ```
 python3 -m http.server
@@ -33,7 +33,7 @@ OR
 py -3 -m http.server
 ```
 
-# If Python version returned above is 2.X
+If Python version returned above is 2.X
 
 ```
 python -m SimpleHTTPServer
