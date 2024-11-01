@@ -108,18 +108,26 @@
     <div class="collapse navbar-collapse navbar-main-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Home</a></li>
-        <li><a href="/compare.html">Redline</a></li>
+        <!-- <li><a href="/compare.html">Redline</a></li> -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
           <ul class="dropdown-menu">
+            <h6 class="px-1">AEON LASERS</h6>
             <li><a href="/mira-s.html">MIRA S Redline Series</a></li>
             <li><a href="/mira-pro-s.html">MIRA Pro S Redline Series</a></li>
             <li><a href="/nova-s.html">NOVA S Redline Series</a></li>
             <li><a href="/supernova-s.html">Super NOVA S Redline Series</a></li>
+            <li><a href="/compare.html"><span class="brand-redline">REDLINE</span> Series</a></li>
+            <li><a href="/emp-signature-series.html"><span class="brand-redline">REDLINE</span> EMP Signature Series</a></li>
             <hr/>
+            <h6 class="px-1">EMP LASERS</h6>
             <li><a href="/emp-laser.html">EMP Fiber Galvo Lasers</a></li>
-            <li><a href="/emp-msc.html">EMP Material Storage Cabinets</a></li>
+            <li><a href="/emp-uv-laser.html">EMP Fiber UV Lasers</a></li>
+            <!-- <li><a href="/emp-industrial-fiber-laser.html">EMP Industrial Fiber Lasers</a></li> -->
+            <hr/>
+            <h6 class="px-1">ADDONS</h6>
             <li><a href="/multi-roller.html">Multi Roller Rotary</a></li>
+            <li><a href="/emp-msc.html">EMP Material Storage Cabinets</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -460,8 +468,8 @@
                     </tr>
                     <tr>
                       <th>Water Chiller</th>
-                      <td colspan="1">Built-in S&A 3000 Fan Cooled Chiller</td>
-                      <td colspan="1">Built-in S&A 5000 Vapor Compression Chiller</td>
+                      <td colspan="1">Built-in S&A 3000 Fan Cooled Chiller <small>(not included with RF Metal models)</small></td>
+                      <td colspan="1">Built-in S&A 5000 Vapor Compression Chiller <small>(not included with RF Metal models)</small></td>
                     </tr>
                     <tr>
                       <th>Fume Exhaust Fan</th>
@@ -528,8 +536,8 @@
                     </tr>
                     <tr>
                       <th>Downdraft</th>
-                      <td colspan="1"><i class="fa fa-remove" style="color:red;" title="not included"></i></td>
-                      <td colspan="1"><i class="fa fa-remove" style="color:red;" title="not included"></i></td>
+                      <td colspan="1"><i class="fa fa-check" style="color:green;" title="included"></i></td>
+                      <td colspan="1"><i class="fa fa-check" style="color:green;" title="included"></i></td>
                     </tr>
                     <tr>
                       <th>Blade Table</th>
@@ -924,6 +932,29 @@
 <!--END: FOOTER-->
 
 
+<script>
+      // milliseconds (1 minute = 60000 ms)
+      const inactivityTime = 120000; 
+      let inactivityTimer;
+
+      function resetInactivityTimer() {
+          clearTimeout(inactivityTimer);
+
+          inactivityTimer = setTimeout(() => {
+              if (window.location.pathname !== '/') {
+                  window.location.href = '/';
+              }
+          }, inactivityTime);
+      }
+
+      document.addEventListener('click', resetInactivityTimer);
+      document.addEventListener('scroll', resetInactivityTimer);
+      document.addEventListener('keydown', resetInactivityTimer);
+
+      resetInactivityTimer();
+  </script>
+
+
   <!--START : PRODUCT BUILDER-->
   <div class="lightbox-backdrop"></div>
   <div class="lightbox-box">
@@ -955,16 +986,22 @@
               <a href="#" class="cd-nugget-info hide-on-desktop lightbox-close">Return to Product Page</a>
 
               <ul class="models-list options-list cd-col-1">
-                <li class="js-option js-radio" data-price="8995" data-model="build-MIRAPROS">
+                <li class="js-option js-radio selected" data-price="8995" data-model="build-MIRAPROS">
                   <span class="name">Mira Pro S</span>
                   <img src="/img/mira-pro-s-generic.jpg" alt="Mira Pro S">
                   <span class="price">starting at $8995</span>
                   <div class="radio"></div>
                 </li>
+                <li class="js-option js-radio" data-price="24995" data-model="build-MIRAPROS-signature">
+                  <span class="name">Mira Pro S Signature</span>
+                  <img src="/img/mira-pro-s-generic.jpg" alt="Mira Pro S">
+                  <span class="price">starting at $24995</span>
+                  <div class="radio"></div>
+                </li>
               </ul>
             </section>
           </li>
-          <!-- additional content will be inserted using ajax -->
+          <!-- additional content will be inserted using ajax --> 
         </ul>
       </div>
 

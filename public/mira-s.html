@@ -109,18 +109,26 @@
     <div class="collapse navbar-collapse navbar-main-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Home</a></li>
-        <li><a href="/compare.html">Redline</a></li>
+        <!-- <li><a href="/compare.html">Redline</a></li> -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
           <ul class="dropdown-menu">
+            <h6 class="px-1">AEON LASERS</h6>
             <li><a href="/mira-s.html">MIRA S Redline Series</a></li>
             <li><a href="/mira-pro-s.html">MIRA Pro S Redline Series</a></li>
             <li><a href="/nova-s.html">NOVA S Redline Series</a></li>
             <li><a href="/supernova-s.html">Super NOVA S Redline Series</a></li>
+            <li><a href="/compare.html"><span class="brand-redline">REDLINE</span> Series</a></li>
+            <li><a href="/emp-signature-series.html"><span class="brand-redline">REDLINE</span> EMP Signature Series</a></li>
             <hr/>
+            <h6 class="px-1">EMP LASERS</h6>
             <li><a href="/emp-laser.html">EMP Fiber Galvo Lasers</a></li>
-            <li><a href="/emp-msc.html">EMP Material Storage Cabinets</a></li>
+            <li><a href="/emp-uv-laser.html">EMP Fiber UV Lasers</a></li>
+            <!-- <li><a href="/emp-industrial-fiber-laser.html">EMP Industrial Fiber Lasers</a></li> -->
+            <hr/>
+            <h6 class="px-1">ADDONS</h6>
             <li><a href="/multi-roller.html">Multi Roller Rotary</a></li>
+            <li><a href="/emp-msc.html">EMP Material Storage Cabinets</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -279,7 +287,7 @@
                       <p>All Aeon lasers are now equipped with built-in high-resolution cameras for precise positioning and monitoring.</p>
                     </div>
                     <div>  
-                      <img class="img-responsive" src="/img/redline-10-comprehensive-autofocus.jpg" alt="Integrated Autofocus">
+                      <img class="img-responsive" src="/img/redline-10-comprehensive-autofocus-mira.jpg" alt="Integrated Autofocus">
                       <h4>Integrated Autofocus</h4>
                       <p>Say goodbye to collisions and gouged material. The Aeon Redline Series has a newly designed laser head with integrated autofocus.</p>
                     </div>
@@ -501,7 +509,7 @@
                     </tr>
                     <tr>
                       <th>Material Collection Tray</th>
-                      <td colspan="1"><i class="fa fa-remove" style="color:red;" title="not included"></i></td>
+                      <td colspan="1"><i class="fa fa-check" style="color:green;" title="included"></i></td>
                     </tr>
                     <tr>
                       <td colspan="3" class="subhead">Control &amp; Software</td>
@@ -812,6 +820,29 @@
       </script> Engraving Machines Plus. All Rights Reserved.</p>
 </footer>
 <!--END: FOOTER-->
+
+
+<script>
+      // milliseconds (1 minute = 60000 ms)
+      const inactivityTime = 120000; 
+      let inactivityTimer;
+
+      function resetInactivityTimer() {
+          clearTimeout(inactivityTimer);
+
+          inactivityTimer = setTimeout(() => {
+              if (window.location.pathname !== '/') {
+                  window.location.href = '/';
+              }
+          }, inactivityTime);
+      }
+
+      document.addEventListener('click', resetInactivityTimer);
+      document.addEventListener('scroll', resetInactivityTimer);
+      document.addEventListener('keydown', resetInactivityTimer);
+
+      resetInactivityTimer();
+  </script>
 
 
   <!--START : PRODUCT BUILDER-->

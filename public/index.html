@@ -81,7 +81,7 @@
       <div class="row py-6">
         <div class="col-xs-12">
           <h2 class="text-center" style="font-size:72px;;">Win a Free<span class="brand-redline"> Aeon Laser</span></h2>
-          <p class="lead text-center pb-10">Scan your badge and automatically enter to win a Free Aeon MIRA 7 Laser!</p>
+          <p class="lead text-center pb-10">Ask Our Team for Details</p>
         </div>
       </div>
     </div>      
@@ -113,6 +113,29 @@
       </script> Engraving Machines Plus. All Rights Reserved.</p>
 </footer>
 <!--END: FOOTER-->
+
+
+<script>
+      // milliseconds (1 minute = 60000 ms)
+      const inactivityTime = 120000; 
+      let inactivityTimer;
+
+      function resetInactivityTimer() {
+          clearTimeout(inactivityTimer);
+
+          inactivityTimer = setTimeout(() => {
+              if (window.location.pathname !== '/') {
+                  window.location.href = '/';
+              }
+          }, inactivityTime);
+      }
+
+      document.addEventListener('click', resetInactivityTimer);
+      document.addEventListener('scroll', resetInactivityTimer);
+      document.addEventListener('keydown', resetInactivityTimer);
+
+      resetInactivityTimer();
+  </script>
 
   <!-- ============= Javascript ============= -->
 <script src="/js/main.js"></script>
