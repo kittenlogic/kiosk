@@ -5,7 +5,7 @@
 1. Copy the Kiosk folder into `C:\Program Files (x86)`
 2. Open the "alt index pages" folder and copy the corresponding "index.html" page into the "public" folder.
 3. Make sure the alt index file replaces the existing "index.html" page.
-4. Go back to the Kiosk folder and install python-3.12.3-amd64.exe
+4. If setting up a new kiosk, go back to the Kiosk folder and install python-3.12.3-amd64.exe
 5. Type "Command Prompt" into the Windows search bar.
 6. Type `cd\program files (x86)\kiosk\public`
 7. Type `python3 -m http.server`
