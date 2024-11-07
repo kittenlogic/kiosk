@@ -16845,6 +16845,18 @@ time {
   color: #eaeaea;
 }
 
+.bg-red {
+  background-color: #f3bfc4;
+}
+
+.bg-green {
+  background-color: #c0d8bc;
+}
+
+.bg-yellow {
+  background-color: #f7f3b2;
+}
+
 .sandy {
   background-color: #FFF9ED;
 }
@@ -16874,6 +16886,19 @@ time {
 
 .text-bb {
   color: #E0EDFF;
+}
+
+.navbar-default.redline {
+  border-bottom: 1px solid #9D1C1F;
+}
+
+.label-series.redline {
+  color: #9D1C1F;
+  background-color: #ffefef;
+}
+
+ul.description.redline .fa {
+  color: #9D1C1F;
 }
 
 .print-header {
