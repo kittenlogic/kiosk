@@ -16901,6 +16901,19 @@ ul.description.redline .fa {
   color: #9D1C1F;
 }
 
+.redline-list {
+  list-style: none;
+}
+
+.redline-list li {
+  font-size: 1.25em;
+  padding-bottom: 0.75em;
+}
+
+.redline-list .fa {
+  margin-left: -1.25em;
+}
+
 .print-header {
   display: none;
 }
