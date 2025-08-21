@@ -8,7 +8,7 @@
 4. If setting up a new kiosk, go back to the Kiosk folder and install python-3.12.3-amd64.exe
 5. Type "Command Prompt" into the Windows search bar.
 6. Type `cd\program files (x86)\kiosk\public`
-7. Type `python3 -m http.server`
+7. Type `py -m http.server`
 8. Click Allow Access if a security popup appears.
 9. Lauch Microsoft Edge and type `localhost:8000` into the browser
 10. Once the page loads, click on the "..." at the top right of the browser and click on the Fullscreen icon. Note: F11 is the only way to exit full screen mode, so you will need to plug in a keyboard if you want to exit.
